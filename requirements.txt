@@ -1,0 +1,21 @@
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+torch==2.6.0+cu118
+torchvision==0.21.0+cu118
+lightning==2.5.0
+torchmetrics==1.8.2
+transformers==4.50.0
+peft==0.14.0
+accelerate==1.10.1
+h5py==3.14.0
+numpy==2.2.6
+pandas==2.3.2
+scikit-learn==1.6.1
+scipy==1.16.1
+Pillow==10.2.0
+tqdm==4.67.1
+PyYAML==6.0.2
+pydantic==2.9.2
+rich==13.9.4
+fire==0.7.1
+tensorboard==2.20.0

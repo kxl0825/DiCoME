@@ -1,0 +1,72 @@
+﻿run_name: test_cdfv2_on_redu50_dicome-best-epoch=04
+run_dir: runs/final_test
+seed: 42
+throw_exception_if_run_exists: false
+num_classes: 2
+binary_labels: true
+backbone: openai/clip-vit-large-patch14
+feature_dim: 64
+peft:
+  enabled: true
+  lora:
+    enabled: true
+    target_modules:
+    - q_proj
+    - v_proj
+    rank: 8
+    alpha: 16
+    dropout: 0.1
+    bias: none
+vae_enabled: true
+vae_latent_dim: 32
+beta_kld: 2.0
+lambda_align: 1.0
+lambda_vae: 0.7
+max_epochs: 20
+dicome_epochs: 20
+dicome_learning_rate: 0.0001
+lr_scheduler: cosine
+min_lr: 1.0e-06
+weight_decay: 0.01
+betas:
+- 0.9
+- 0.999
+trn_h5_path: data/h5/train.h5
+val_h5_path: data/h5/val.h5
+tst_h5_path: data/h5/test.h5
+trn_files:
+- data/splits/train/DF.txt
+- data/splits/train/F2F.txt
+- data/splits/train/FS.txt
+- data/splits/train/NT.txt
+- data/splits/train/real.txt
+val_files:
+- data/splits/val/DF.txt
+- data/splits/val/F2F.txt
+- data/splits/val/FS.txt
+- data/splits/val/NT.txt
+- data/splits/val/real.txt
+tst_files:
+  CDFv2:
+  - data/splits/test/Celeb-synthesis.txt
+  - data/splits/test/Celeb-real.txt
+  - data/splits/test/YouTube-real.txt
+limit_trn_files: null
+limit_val_files: null
+limit_tst_files: null
+batch_size: 128
+mini_batch_size: 128
+num_workers: 2
+devices:
+- 0
+precision: bf16-mixed
+fast_dev_run: false
+overfit_batches: 0.0
+limit_train_batches: 0.0
+limit_val_batches: 0.0
+limit_test_batches: 1.0
+deterministic: null
+detect_anomaly: false
+checkpoint_for_testing: best
+# Download checkpoint: https://huggingface.co/kxl0825/DiCoME/tree/main
+resume_from_checkpoint: null
