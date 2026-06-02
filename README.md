@@ -3,7 +3,7 @@
 # Divide and Conquer: Reliable Multi-View Evidential Learning for Deepfake Detection
 
 [![ICML 2026](https://img.shields.io/badge/ICML-2026-blue.svg)](#)&nbsp;&nbsp;&nbsp;
-[![arXiv](https://img.shields.io/badge/arXiv-Coming%20Soon-b31b1b.svg)](#)&nbsp;&nbsp;&nbsp;
+[![arXiv](https://img.shields.io/badge/arXiv-2606.01885-b31b1b.svg)](https://arxiv.org/abs/2606.01885)&nbsp;&nbsp;&nbsp;
 [![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97-Hugging%20Face-yellow)](https://huggingface.co/kxl0825/DiCoME/tree/main)&nbsp;&nbsp;&nbsp;
 [![BibTeX](https://img.shields.io/badge/%F0%9F%93%96-BibTeX-yellow)](#-citation)&nbsp;&nbsp;&nbsp;
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-brightgreen.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
@@ -18,6 +18,7 @@
 ## 📢 News
 
 - **2026-05-01** Our paper is accepted by **ICML 2026**.
+- **2026-06-02** Release arXiv preprint.
 - **2026-06-01** Release code and pretrained checkpoint for **DiCoME**.
 
 ---
@@ -289,7 +290,19 @@ Prediction CSV files are saved under `runs/`.
 
 ## 📜 Citation
 
-The citation will be updated after the paper and arXiv page are officially available.
+If you use or extend our work, please cite:
+
+```bibtex
+@misc{kang2026divideconquerreliablemultiview,
+  title={Divide and Conquer: Reliable Multi-View Evidential Learning for Deepfake Detection},
+  author={Xiaolu Kang and Zhongyuan Wang and Jikang Cheng and Baojin Huang and Zhanhe Lei and Gang Wu and Qin Zou and Qian Wang},
+  year={2026},
+  eprint={2606.01885},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2606.01885}
+}
+```
 
 ---
 
