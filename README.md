@@ -18,8 +18,8 @@
 ## 📢 News
 
 - **2026-05-01** Our paper is accepted by **ICML 2026**.
-- **2026-06-02** Release arXiv preprint.
 - **2026-06-01** Release code and pretrained checkpoint for **DiCoME**.
+- **2026-06-02** Release arXiv preprint.
 
 ---
 
